@@ -1,0 +1,227 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fefaf5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.registration-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #f49564;
+    outline: none;
+}
+
+.form-group small {
+    font-size: 12px;
+    color: #888;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f49564;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-btn img {
+    margin: 0px 10px;
+}
+
+.register-btn:hover {
+    background-color: #d47950;
+}
+
+.register-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.alternative-signup {
+    text-align: center;
+    margin: 20px 0;
+    color: #aaa;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.signup-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-footer a {
+    color: #f49564;
+    text-decoration: none;
+}
+
+.terms-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.terms-container input {
+    margin-right: 10px;
+}
+
+.Number{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.input-code{
+    width: 28%;
+  
+
+}
+
+option{
+    font-size: small;
+}
+
+.input-number{
+    width: 70%;
+}
+
+
+/* Custom Toast Styles */
+.custom-toast {
+    border-radius: 10px;  /* Rounded corners */
+    font-family: 'Roboto', sans-serif;  /* Use a modern font */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+    padding: 15px 30px;  /* Increase padding for better space */
+    font-size: 16px;  /* Increase font size for readability */
+    text-transform: uppercase;  /* Make text uppercase for style */
+    letter-spacing: 1px;  /* Add some space between letters */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Close Button Styling */
+.custom-toast .toast-close {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Close button hover effect */
+.custom-toast .toast-close:hover {
+    opacity: 1;
+}
+
+/* Toast Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Toast's Shadow Effect */
+.custom-toast:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    z-index: -1;  /* Behind the toast message */
+}
+
+/* Make sure the text stands out */
+.custom-toast {
+    color: white;
+}
+
+/* For the "top" position */
+.custom-toast.toast-top {
+    margin-top: 50px;
+}
+
+/* For "right" position */
+.custom-toast.toast-right {
+    right: 20px;
+}
+
+/* Optionally you can add a glowing effect when hovered */
+.custom-toast:hover {
+    transform: scale(1.05);  /* Slightly zoom in when hovered */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);  /* Glowing effect */
+}
+
+
+
+
+
+ 
+
